@@ -2,7 +2,9 @@
   --body-font: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
   --body-bg: #fdfcf8;
   --black: #1a1a1a;
+  --black-alternate: #555;
   --white: #fff;
+  --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
 }
 
 html,
@@ -55,6 +57,64 @@ body {
 
 .main {
   flex: 1;
+}
+
+.book-shelf {
+  margin-top: 3.25rem;
+}
+
+.book {
+  color: var(--black-alternate);
+  background-color: var(--white);
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+
+.book__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.book__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.book__status {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.book__status > input {
+  cursor: inherit;
+}
+
+.book__remove {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #a30015;
+  color: var(--white);
+  transition: all 0.2s ease;
+}
+
+.book__remove:hover {
+  transform: translateY(-0.125rem);
+}
+
+.book__remove:active {
+  opacity: 0.7;
 }
 
 .footer {
