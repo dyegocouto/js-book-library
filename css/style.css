@@ -1,0 +1,54 @@
+:root {
+  --body-font: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+  --body-bg: #fdfcf8;
+  --black: #1a1a1a;
+  --white: #fff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--body-bg);
+  font-family: var(--body-font);
+}
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__title {
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+.add-button {
+  border: none;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 4px;
+  padding: 0.875rem 1.75rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-button:hover {
+  transform: translateY(-0.125rem);
+}
+
+.add-button:active {
+  opacity: 0.7;
+}
