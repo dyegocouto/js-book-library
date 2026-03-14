@@ -1,5 +1,8 @@
 :root {
-  --body-font: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+  --body-font:
+    Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif,
+    Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
   --body-bg: #fdfcf8;
   --black: #1a1a1a;
   --red: #a30015;
