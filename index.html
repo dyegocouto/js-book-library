@@ -9,93 +9,51 @@
     <script defer src="js/script.js"></script>
   </head>
   <body>
-    <div class="page-container">
+    <div class="layout">
       <header class="header">
         <h1 class="header__title">My Library</h1>
-        <button class="add-button">New Book</button>
+        <button class="header__add-book">New Book</button>
       </header>
       <main class="main">
-        <div class="book-shelf">
+        <div class="shelf">
           <div class="book">
-            <div class="book__info">
+            <div class="book__details">
               <span class="book__title">The Lord of the Rings</span>
               <span class="book__author">J.R.R. Tolkien</span>
               <span class="book__pages">1178 pages</span>
             </div>
-            <div class="book__actions">
+            <div class="book__controls">
               <label class="book__status">
+                <input type="checkbox" class="book__checkbox" />
                 Read
-                <input type="checkbox" id="read" />
               </label>
               <button class="book__remove">Remove</button>
             </div>
           </div>
           <div class="book">
-            <div class="book__info">
-              <span class="book__title">The Great Gatsby</span>
-              <span class="book__author">F. Scott Fitzgerald</span>
-              <span class="book__pages">180 pages</span>
-            </div>
-            <div class="book__actions">
-              <label class="book__status">
-                Read
-                <input type="checkbox" id="read" />
-              </label>
-              <button class="book__remove">Remove</button>
-            </div>
-          </div>
-          <div class="book">
-            <div class="book__info">
+            <div class="book__details">
               <span class="book__title">The Catcher in the Rye</span>
               <span class="book__author">J.D. Salinger</span>
               <span class="book__pages">234 pages</span>
             </div>
-            <div class="book__actions">
+            <div class="book__controls">
               <label class="book__status">
+                <input type="checkbox" class="book__checkbox" />
                 Read
-                <input type="checkbox" id="read" />
               </label>
               <button class="book__remove">Remove</button>
             </div>
           </div>
           <div class="book">
-            <div class="book__info">
-              <span class="book__title">To Kill a Mockingbird</span>
-              <span class="book__author">Harper Lee</span>
-              <span class="book__pages">281 pages</span>
+            <div class="book__details">
+              <span class="book__title">The Great Gatsby</span>
+              <span class="book__author">F. Scott Fitzgerald</span>
+              <span class="book__pages">180 pages</span>
             </div>
-            <div class="book__actions">
+            <div class="book__controls">
               <label class="book__status">
+                <input type="checkbox" class="book__checkbox" />
                 Read
-                <input type="checkbox" id="read" />
-              </label>
-              <button class="book__remove">Remove</button>
-            </div>
-          </div>
-          <div class="book">
-            <div class="book__info">
-              <span class="book__title">1984</span>
-              <span class="book__author">George Orwell</span>
-              <span class="book__pages">328 pages</span>
-            </div>
-            <div class="book__actions">
-              <label class="book__status">
-                Read
-                <input type="checkbox" id="read" />
-              </label>
-              <button class="book__remove">Remove</button>
-            </div>
-          </div>
-          <div class="book">
-            <div class="book__info">
-              <span class="book__title">Pride and Prejudice</span>
-              <span class="book__author">Jane Austen</span>
-              <span class="book__pages">432 pages</span>
-            </div>
-            <div class="book__actions">
-              <label class="book__status">
-                Read
-                <input type="checkbox" id="read" />
               </label>
               <button class="book__remove">Remove</button>
             </div>
@@ -103,33 +61,52 @@
         </div>
       </main>
       <footer class="footer">
-        <p>Created by dyegocouto</p>
-        <a href="https://github.com/dyegocouto" target="_blank">
+        <p class="footer__credit">Created by dyegocouto</p>
+        <a
+          class="footer__link"
+          href="https://github.com/dyegocouto"
+          target="_blank"
+        >
           <img
-            class="footer-logo"
+            class="footer__icon"
             src="img/github-mark.svg"
-            alt="Github profile link"
+            alt="GitHub profile"
           />
         </a>
       </footer>
       <dialog class="modal">
-        <div class="modal__content">
-          <div class="modal__info">
-            <label for="title">Title</label>
-            <input type="text" placeholder="The Lord of the Rings" id="title" />
-            <label for="author">Author</label>
-            <input type="text" placeholder="J.R.R Tolkien" id="author" />
-            <label for="pages">N⁰ Pages</label>
-            <input type="text" placeholder="1177" id="pages" />
+        <form class="modal__form">
+          <h2 class="modal__title">Add Book</h2>
+          <div class="modal__fields">
+            <label class="modal__field">
+              <span class="modal__label">Title</span>
+              <input
+                class="modal__input"
+                type="text"
+                placeholder="The Lord of the Rings"
+              />
+            </label>
+            <label class="modal__field">
+              <span class="modal__label">Author</span>
+              <input
+                class="modal__input"
+                type="text"
+                placeholder="J.R.R Tolkien"
+              />
+            </label>
+            <label class="modal__field">
+              <span class="modal__label">Pages</span>
+              <input class="modal__input" type="number" placeholder="1178" />
+            </label>
           </div>
           <div class="modal__actions">
-            <label class="modal__checkbox" for="read"
-              >Read
-              <input type="checkbox" name="read" id="read" />
+            <label class="modal__checkbox">
+              <input type="checkbox" />
+              Read
             </label>
-            <button class="modal__button">Add book</button>
+            <button class="modal__submit">Add Book</button>
           </div>
-        </div>
+        </form>
       </dialog>
     </div>
   </body>

@@ -22,7 +22,7 @@ body {
   font-family: var(--body-font);
 }
 
-.page-container {
+.layout {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ body {
   font-size: 2.5rem;
 }
 
-.add-button {
+.header__add-book {
   border: none;
   background-color: var(--black);
   color: var(--white);
@@ -52,11 +52,11 @@ body {
   transition: all 0.2s ease;
 }
 
-.add-button:hover {
+.header__add-book:hover {
   transform: translateY(-0.125rem);
 }
 
-.add-button:active {
+.header__add-book:active {
   opacity: 0.7;
 }
 
@@ -67,7 +67,7 @@ body {
   width: 100%;
 }
 
-.book-shelf {
+.shelf {
   width: 100%;
   max-width: 700px;
   padding: 1.25rem;
@@ -91,13 +91,13 @@ body {
   padding: 1.25rem;
 }
 
-.book__info {
+.book__details {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.book__actions {
+.book__controls {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -110,7 +110,7 @@ body {
   gap: 0.5rem;
 }
 
-.book__status > input {
+.book__checkbox {
   cursor: inherit;
 }
 
@@ -137,7 +137,7 @@ body {
   font-size: 1.125rem;
 }
 
-.footer-logo {
+.footer__icon {
   margin-left: 0.625rem;
   width: 1.625rem;
   height: 1.625rem;
@@ -145,30 +145,50 @@ body {
   cursor: pointer;
 }
 
-.footer-logo:hover {
+.footer__icon:hover {
   transform: rotate(360deg);
 }
 
 .modal {
   padding: 1.25rem;
   border: 1px solid #eee;
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
   box-shadow: var(--shadow);
   border-radius: 8px;
 }
 
-.modal__content {
+.modal__form {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.modal__info {
+.modal__title {
+  margin: 0 0 10px 0;
+}
+
+.modal__fields {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.modal__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label {
+  margin-bottom: 2px;
+}
+
+.modal__input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
 }
 
 .modal__actions {
@@ -179,9 +199,11 @@ body {
 
 .modal__checkbox {
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.modal__button {
+.modal__submit {
   border: none;
   background-color: var(--blue);
   color: var(--white);
@@ -190,22 +212,10 @@ body {
   transition: all 0.2s ease;
 }
 
-.modal__button:hover {
+.modal__submit:hover {
   transform: translateY(-0.125rem);
 }
 
-.modal__button:active {
+.modal__submit:active {
   opacity: 0.7;
-}
-
-.modal label {
-  display: block;
-}
-
-.modal input[type="text"] {
-  display: block;
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px 10px;
 }

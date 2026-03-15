@@ -1,6 +1,6 @@
-const newBookButton = document.querySelector(".add-button");
+const headerAddBook = document.querySelector(".header__add-book");
 const modal = document.querySelector(".modal");
 
-newBookButton.addEventListener("click", () => {
+headerAddBook.addEventListener("click", () => {
   modal.showModal();
 });
