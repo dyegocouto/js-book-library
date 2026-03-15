@@ -6,6 +6,7 @@
   --body-bg: #fdfcf8;
   --black: #1a1a1a;
   --red: #a30015;
+  --blue: #3d5a80;
   --black-alternate: #555;
   --white: #fff;
   --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
@@ -146,4 +147,65 @@ body {
 
 .footer-logo:hover {
   transform: rotate(360deg);
+}
+
+.modal {
+  padding: 1.25rem;
+  border: 1px solid #eee;
+  width: 280px;
+  height: 280px;
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+}
+
+.modal__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.modal__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.modal__checkbox {
+  display: flex;
+}
+
+.modal__button {
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal__button:hover {
+  transform: translateY(-0.125rem);
+}
+
+.modal__button:active {
+  opacity: 0.7;
+}
+
+.modal label {
+  display: block;
+}
+
+.modal input[type="text"] {
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
 }
