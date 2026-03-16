@@ -97,6 +97,10 @@ body {
   gap: 0.5rem;
 }
 
+.book__title {
+  font-weight: bold;
+}
+
 .book__controls {
   display: flex;
   flex-direction: column;
