@@ -34,7 +34,6 @@
       </footer>
       <dialog class="modal">
         <form class="modal__form">
-          <h2 class="modal__title">Add Book</h2>
           <div class="modal__fields">
             <label class="modal__field">
               <span class="modal__label">Title</span>
@@ -54,7 +53,12 @@
             </label>
             <label class="modal__field">
               <span class="modal__label">Pages</span>
-              <input class="modal__input" type="number" placeholder="1178" />
+              <input
+                class="modal__input"
+                type="number"
+                placeholder="1178"
+                min="1"
+              />
             </label>
           </div>
           <div class="modal__actions">
