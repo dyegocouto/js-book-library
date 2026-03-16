@@ -73,7 +73,7 @@ body {
   padding: 1.25rem;
   margin-top: 3.25rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
   grid-auto-rows: max-content;
   gap: 0.625rem;
 }
@@ -166,8 +166,6 @@ body {
 }
 
 .modal__title {
-  margin: 0 0 10px 0;
-  /* margin: 0; */
   margin: 0 0 30px 0;
 }
 
